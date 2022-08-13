@@ -1,4 +1,4 @@
-package com.thescholl.ssiach6ex1;
+package com.theschool.ssiach6ex1;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
