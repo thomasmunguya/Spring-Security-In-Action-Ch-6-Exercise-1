@@ -1,8 +1,10 @@
 package com.theschool.ssiach6ex1.model.user;
 
+import com.sun.istack.NotNull;
 import com.theschool.ssiach6ex1.model.authority.Authority;
 import com.theschool.ssiach6ex1.model.product.Product;
 import javax.persistence.*;
+import javax.validation.constraints.Size;
 import java.util.*;
 
 /**
@@ -18,11 +20,15 @@ public class User {
      * Defines the username of the user.
      */
     @Id
+    @NotNull
+    @Size(min = 3)
     private String username;
 
     /**
      * Defines the password of the user.
      */
+    @NotNull
+    @Size(min = 8)
     private String password;
 
     /**
